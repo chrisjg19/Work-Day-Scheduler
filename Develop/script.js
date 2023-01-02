@@ -25,11 +25,9 @@ $(function () {
 });
 
 function currentTime() {
-var timeDate = dayjs().format( "MMM D, YYYY " + " h:mm:ss")
+var timeDate = dayjs().format( "MMM D, YYYY ")
 $("#currentDay").text(timeDate);
 
-//var time = dayjs().format("h:mm:ss");
 
-//$("#clock").text(time);
 }
 });
