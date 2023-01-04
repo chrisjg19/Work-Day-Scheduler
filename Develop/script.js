@@ -24,12 +24,19 @@ $(function () {
   // current hour in 24-hour time?
     var currentHour = dayjs().hour();
 
+    $(".time-block").each(function() {
+      var timeBlockId = $(this).attr("id");
+      var timeBlockTime = parseInt(timeBlockId.substring(4));
+
+      console.log(timeBlockTime)
+    })
+
   //
   // TODO: Add code to get any user input that was saved in localStorage and set
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
   // 
-  $("#hour9 .time-block").val(localStorage.getItem("hour9"));
+
   // TODO: Add code to display the current date in the header of the page.
 
 
