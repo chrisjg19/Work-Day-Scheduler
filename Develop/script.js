@@ -12,7 +12,7 @@ $(function () {
 
   saveBtn.on("click", function () {
     var descriptionText = $(this).siblings(".description").val();
-    var timeHour = $(this).closest(".time-block").attr("id");
+    var timeHour = $(this).parent(".time-block").attr("id");
 
     localStorage.setItem(timeHour, descriptionText)
   })
@@ -46,7 +46,11 @@ $(function () {
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
   // 
-
+$(".time-block").each(function() {
+  var timeBlockId = $(this).attr("id");
+  var description = localStorage.getItem(timeBlockId);
+  $(this).find(".description").val(description);
+})
   // TODO: Add code to display the current date in the header of the page.
 
 
