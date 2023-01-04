@@ -29,7 +29,17 @@ $(function () {
       var timeBlockTime = parseInt(timeBlockId.substring(4));
 
       console.log(timeBlockTime)
-    })
+
+      if (timeBlockTime < currentHour) {
+        $(this).addClass("past");
+      }
+      else if (timeBlockTime === currentHour) {
+        $(this).addClass("present");
+      }
+      else {
+        $(this).addClass("future");
+      }
+    });
 
   //
   // TODO: Add code to get any user input that was saved in localStorage and set
