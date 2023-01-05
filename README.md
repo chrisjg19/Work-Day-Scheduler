@@ -9,8 +9,10 @@ This simple Work Day Scheduler will allow users to set up task they have for the
 This project came with started code that included linking to jquery, bootstrap as well as some fonts from google.
 
 ## Screenshots of the Deployed Project
-
-
+Here is the Deployed page
+![Deoplyed project](./Develop/images/deployed.png)
+Here is the local storage 
+![Local Storage](./Develop/images/local%20storage.png)
 
 ## Link to Deployed Project
 
