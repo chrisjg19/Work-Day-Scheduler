@@ -10,6 +10,8 @@ This project came with started code that included linking to jquery, bootstrap a
 
 ## Screenshots of the Deployed Project
 
+
+
 ## Link to Deployed Project
 
 https://chrisjg19.github.io/Work-Day-Scheduler/
